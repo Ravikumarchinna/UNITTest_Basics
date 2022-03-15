@@ -16,6 +16,10 @@
 		DB3801AB27E05E7F004F27D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3801A927E05E7F004F27D8 /* LaunchScreen.storyboard */; };
 		DB3801B627E05E7F004F27D8 /* UnitTest_BasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3801B527E05E7F004F27D8 /* UnitTest_BasicsTests.swift */; };
 		DB3801C127E05E7F004F27D8 /* UnitTest_BasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3801C027E05E7F004F27D8 /* UnitTest_BasicsUITests.swift */; };
+		DB3801D727E069D0004F27D8 /* XIBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3801D527E069D0004F27D8 /* XIBBaseViewController.swift */; };
+		DB3801D827E069D0004F27D8 /* XIBBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB3801D627E069D0004F27D8 /* XIBBaseViewController.xib */; };
+		DB3801E227E06DCC004F27D8 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3801E127E06DCC004F27D8 /* LoadViewController.swift */; };
+		DB3801F227E0706A004F27D8 /* LoadViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3801F127E0706A004F27D8 /* LoadViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		DB3801BC27E05E7F004F27D8 /* UnitTest_BasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest_BasicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3801C027E05E7F004F27D8 /* UnitTest_BasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_BasicsUITests.swift; sourceTree = "<group>"; };
 		DB3801C227E05E7F004F27D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3801D527E069D0004F27D8 /* XIBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBaseViewController.swift; sourceTree = "<group>"; };
+		DB3801D627E069D0004F27D8 /* XIBBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBBaseViewController.xib; sourceTree = "<group>"; };
+		DB3801E127E06DCC004F27D8 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
+		DB3801F127E0706A004F27D8 /* LoadViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,9 @@
 			children = (
 				DB38019B27E05E7A004F27D8 /* AppDelegate.swift */,
 				DB38019D27E05E7A004F27D8 /* SceneDelegate.swift */,
-				DB38019F27E05E7A004F27D8 /* ViewController.swift */,
+				DB3801E027E06AC7004F27D8 /* ProgramaticWayLoadVC */,
+				DB3801DF27E06AB3004F27D8 /* NormalLoadingVC */,
+				DB3801D427E069AA004F27D8 /* XIB_Base */,
 				DB3801A127E05E7A004F27D8 /* Main.storyboard */,
 				DB3801A727E05E7F004F27D8 /* Assets.xcassets */,
 				DB3801A927E05E7F004F27D8 /* LaunchScreen.storyboard */,
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				DB3801B527E05E7F004F27D8 /* UnitTest_BasicsTests.swift */,
+				DB3801F127E0706A004F27D8 /* LoadViewVC.swift */,
 				DB3801B727E05E7F004F27D8 /* Info.plist */,
 			);
 			path = UnitTest_BasicsTests;
@@ -129,6 +140,31 @@
 				DB3801C227E05E7F004F27D8 /* Info.plist */,
 			);
 			path = UnitTest_BasicsUITests;
+			sourceTree = "<group>";
+		};
+		DB3801D427E069AA004F27D8 /* XIB_Base */ = {
+			isa = PBXGroup;
+			children = (
+				DB3801D527E069D0004F27D8 /* XIBBaseViewController.swift */,
+				DB3801D627E069D0004F27D8 /* XIBBaseViewController.xib */,
+			);
+			path = XIB_Base;
+			sourceTree = "<group>";
+		};
+		DB3801DF27E06AB3004F27D8 /* NormalLoadingVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB38019F27E05E7A004F27D8 /* ViewController.swift */,
+			);
+			path = NormalLoadingVC;
+			sourceTree = "<group>";
+		};
+		DB3801E027E06AC7004F27D8 /* ProgramaticWayLoadVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB3801E127E06DCC004F27D8 /* LoadViewController.swift */,
+			);
+			path = ProgramaticWayLoadVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +273,7 @@
 				DB3801AB27E05E7F004F27D8 /* LaunchScreen.storyboard in Resources */,
 				DB3801A827E05E7F004F27D8 /* Assets.xcassets in Resources */,
 				DB3801A327E05E7A004F27D8 /* Main.storyboard in Resources */,
+				DB3801D827E069D0004F27D8 /* XIBBaseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3801E227E06DCC004F27D8 /* LoadViewController.swift in Sources */,
+				DB3801D727E069D0004F27D8 /* XIBBaseViewController.swift in Sources */,
 				DB3801A627E05E7A004F27D8 /* UnitTest_Basics.xcdatamodeld in Sources */,
 				DB3801A027E05E7A004F27D8 /* ViewController.swift in Sources */,
 				DB38019C27E05E7A004F27D8 /* AppDelegate.swift in Sources */,
@@ -273,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB3801B627E05E7F004F27D8 /* UnitTest_BasicsTests.swift in Sources */,
+				DB3801F227E0706A004F27D8 /* LoadViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
